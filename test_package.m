@@ -21,6 +21,8 @@
 
 scikit_setup; %%%%%%%%%%%%%call this script to set things up  <- important to use this script first
 
+addpath('data'); %added data dir to the path
+
 load twonorm % we just use a classification dataset for both regression/classification (toy example)
 
 Xtrn = inputs';
