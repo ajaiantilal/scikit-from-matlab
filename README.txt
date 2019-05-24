@@ -17,6 +17,7 @@ pip install scipy scikit-learn numpy  --user
 To make sure xgboost works i had to install xgboost in python via pip on a command line (0.80 was the latest version that worked for me on windows).
 pip install xgboost==0.80 --user
 
+If you find it useful or have some changes that will help out, please let me know!
 
 Let me know if you run into any issues.
 Abhi (abhirana@gmail.com)
