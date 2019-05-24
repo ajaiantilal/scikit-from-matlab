@@ -8,6 +8,16 @@ Use test_randomforest.m to run randomforest algorithm on a test dataset in a way
 
 Use test_xgboost.m to run XGBoost on a test dataset just like the randomforest algorithm test script above
 
+
+To ensure things are working you'll need Matlab & Python installed on your computer. Also, ensure that the pyversion command works in the matlab terminal.
+
+Run the below command in a command terminal to install packages required for python (scipy, scikit, and numpy)
+pip install scipy scikit-learn numpy  --user
+
+To make sure xgboost works i had to install xgboost in python via pip on a command line (0.80 was the latest version that worked for me on windows).
+pip install xgboost==0.80 --user
+
+
 Let me know if you run into any issues.
 Abhi (abhirana@gmail.com)
 scikit-from-matlab 0.0.1
