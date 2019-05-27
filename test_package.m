@@ -19,7 +19,8 @@
 % This file uses all available (supervised) algorithms in scikit and
 % runs thems on some data
 
-scikit_setup; %%%%%%%%%%%%%call this script to set things up  <- important to use this script first
+path_to_package = '.';
+scikit_setup(path_to_package);  %%%%%%%%%%%%%call this script to set things up  <- important to use this script first
 
 addpath('data'); %added data dir to the path
 

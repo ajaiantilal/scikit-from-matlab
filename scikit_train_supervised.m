@@ -44,11 +44,6 @@ function model = scikit_train_supervised(Xtrn, Ytrn, algo_name, algo_params, CV_
     %colum major, row major. so what we do is flip it before sending
     Xtrn = Xtrn';
     
-    %call_for_xgboost_python
-    if count(py.sys.path,'') == 0
-        insert(py.sys.path,int32(0),'');
-    end
-
     mod = py.importlib.import_module('scikit_train_predict_supervised');
     if str2num(pyversion) >= 3
         py.importlib.reload(mod); %python >= version 3

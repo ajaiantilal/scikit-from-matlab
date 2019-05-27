@@ -25,12 +25,7 @@ function ypred = scikit_predict_supervised(Xtst, model)
     %note that array data is represented differently in C (xgboost) / matlab
     %colum major, row major. so what we do is flip it before sending
     Xtst = Xtst';
-    
-    %call_for_xgboost_python
-    if count(py.sys.path,'') == 0
-        insert(py.sys.path,int32(0),'');
-    end
-
+        
     mod = py.importlib.import_module('scikit_train_predict_supervised');
     if str2num(pyversion) >= 3
         py.importlib.reload(mod); %python >= version 3

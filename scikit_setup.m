@@ -16,13 +16,13 @@
 % Author: Abhishek Jaiantilal (abhirana@gmail.com)
 % scikit-from-matlab 0.0.1
 
+function  scikit_setup(package_path)
 %%%%%%%%%%%%%%%%%This is all init stuff that python-matlab requires. you
 %%%%%%%%%%%%%%%%%can call it at init
-clear classes %clears the py classes. seems like 'clear all' doesn't clear these python classes
 
 %call to add python files to the path
-if count(py.sys.path,'') == 0
-    insert(py.sys.path,int32(0),'');
+if count(py.sys.path,package_path) == 0
+    insert(py.sys.path,int32(0),package_path);
 end
 
 mod = py.importlib.import_module('scikit_train_predict_supervised');

@@ -26,7 +26,10 @@
 %only way i could run RandomForest. maybe expanding the matlab python path to
 %include that will help
 
-scikit_setup; %%%%%%%%%%%%%call this script to set things up  <- need to set this up
+clear classes %clears the py classes. seems like 'clear all' doesn't clear these python classes
+
+path_to_package = '.';
+scikit_setup(path_to_package); %%%%%%%%%%%%%call this script to set things up  <- need to set this up
 
 addpath('data');
 
